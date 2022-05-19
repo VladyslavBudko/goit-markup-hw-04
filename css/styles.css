@@ -246,8 +246,6 @@ body {
     url("../images/hero-bg-img.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  /* background-size: cover;
-  background-position: top; */
 }
 
 .hero-title {
@@ -323,11 +321,6 @@ body {
   line-height: 1.71;
 }
 
-.features .section-item {
-  width: 270px;
-  height: 100px;
-}
-
 .features .section-list {
   display: flex;
 }
@@ -335,6 +328,41 @@ body {
 .features .section-item:not(:last-child) {
   margin-right: 30px;
 }
+
+.features .section-item {
+  width: 270px;
+  height: 100px;
+}
+
+.features .section-item::before {
+  display: block;
+  content: "";
+  width: 270px;
+  height: 120px;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--secondary-background);
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.features .section-item:nth-child(1)::before {
+  background-image: url(../icons/2-features/1-antenna.svg);
+}
+
+.features .section-item:nth-child(2)::before {
+  background-image: url(../icons/2-features/2-clock.svg);
+}
+
+.features .section-item:nth-child(3)::before {
+  background-image: url(../icons/2-features/3-diagram.svg);
+}
+
+.features .section-item:nth-child(4)::before {
+  background-image: url(../icons/2-features/4-astronaut.svg);
+}
+
 
 /* Чем мы занимаемся */
 
