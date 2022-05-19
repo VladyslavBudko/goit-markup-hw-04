@@ -181,6 +181,32 @@ body {
   margin-right: 50px;
 }
 
+/* не работает ????????????????????????????????????????????? */
+/* .header-mail-phone .header-item::before {
+  content: " ";
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 10px;
+}
+
+.icon-envelope::before {
+  background-image: url(../icons/1-header/envelope.svg);
+  height: 16px;
+  width: 10px;
+}
+
+.icon-smartphone::before {
+  background-image: url(../icons/1-header/smartphone.svg);
+  height: 10px;
+  width: 16px;
+} */
+
+.header-icon {
+  margin-right: 10px;
+}
+
 .header {
   border-bottom: 1px solid var(--header-line-bottom)
 }
@@ -209,6 +235,19 @@ body {
   background-color: var(--hero-background);
   height: 600px;
   padding: 200px;
+
+  min-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image:
+    linear-gradient(to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url("../images/hero-bg-img.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-size: cover;
+  background-position: top; */
 }
 
 .hero-title {
@@ -250,6 +289,8 @@ body {
   color: var(--primary-color);
   background-color: var(--hero-button-hover);
 }
+
+
 
 /* Особенности features  */
 .features {
