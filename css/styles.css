@@ -19,7 +19,8 @@
 
   --card-set-gap: 30px;
 
-  --icon-main-color: #AFB1B8
+  --icon-main-color: #AFB1B8;
+  --icon-footer-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Іноді є питання, позначені:
@@ -477,6 +478,14 @@ background-color: var(--hero-button-hover);
   padding: 60px 0;
 }
 
+.footer-list {
+  display: flex;
+}
+
+.footer-item:not(:last-child) {
+  margin-right: 70px;
+}
+
 .address-footer {
   color: var(--primary-color);
   font-size: 14px;
@@ -505,6 +514,39 @@ background-color: var(--hero-button-hover);
 .address-item:not(:last-child) {
   margin-bottom: 9px;
 }
+
+/* Footer Join socials */
+
+.footer-item-join {
+  margin-top: 12px;
+}
+
+.footer-item-join {
+  width: 144px;
+  height: 16px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-color);
+
+  margin-bottom: 20px;
+}
+
+.footer .team-button {
+  background-color: var(--icon-footer-color);
+  fill: var(--primary-color);
+}
+
+.footer .team-button:hover,
+.footer .team-button:focus {
+  background-color: var(--accent-color);
+  fill: var(--primary-color);
+}
+
 
 /* ---------------------------------------------
  portfolio projekts 
