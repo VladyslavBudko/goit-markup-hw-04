@@ -18,6 +18,8 @@
   --header-line-bottom: #ECECEC;
 
   --card-set-gap: 30px;
+
+  --icon-main-color: #AFB1B8
 }
 
 /* Іноді є питання, позначені:
@@ -312,13 +314,6 @@ body {
   margin-right: 30px;
 }
 
-/* .features .section-item {
-  width: 270px;
-  height: 120px;
-
-} */
-
-/* .features .section-item::before */
 .features-icon-section {
   display: flex;
   align-items: center;
@@ -332,25 +327,7 @@ body {
   border-radius: 4px;
 }
 
-/* .features .section-item:nth-child(1)::before {
-  background-image: url(../icons/2-features/1-antenna.svg);
-} */
-
-/* .features .section-item:nth-child(2)::before {
-  background-image: url(../icons/2-features/2-clock.svg);
-}
-
-.features .section-item:nth-child(3)::before {
-  background-image: url(../icons/2-features/3-diagram.svg);
-}
-
-.features .section-item:nth-child(4)::before {
-  background-image: url(../icons/2-features/4-astronaut.svg);
-} */
-
-
 /* Чем мы занимаемся */
-
 
 .doing .section-list {
   display: flex;
@@ -416,6 +393,46 @@ body {
   border-radius: 4px;
   overflow: hidden;
 }
+
+/* Clients icon */
+
+
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1* var(--card-set-gap));
+  margin-top: calc(-1* var(--card-set-gap));
+
+  align-items: center;
+  justify-content: center;
+}
+
+.clients-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-basis: calc(100%/6- var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-main-color);
+  border-radius: 4px;
+}
+
+.clients-icon {
+  fill: var(--icon-main-color);
+}
+
+
+.clients-item:hover,
+.clients-icon:hover {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
 
 /* footer */
 
