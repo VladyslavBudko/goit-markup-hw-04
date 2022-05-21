@@ -275,6 +275,7 @@ body {
 /* Особенности features  */
 .features {
   padding-top: 94px;
+  padding-bottom: 0px;
 }
 
 .section-uppertitle {
@@ -311,29 +312,31 @@ body {
   margin-right: 30px;
 }
 
-.features .section-item {
-  width: 270px;
-  height: 100px;
-}
-
-.features .section-item::before {
-  display: block;
-  content: "";
+/* .features .section-item {
   width: 270px;
   height: 120px;
-  background-size: 70px;
-  background-repeat: no-repeat;
-  background-position: center;
+
+} */
+
+/* .features .section-item::before */
+.features-icon-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 270px;
+  height: 120px;
+
   background-color: var(--secondary-background);
   margin-bottom: 30px;
   border-radius: 4px;
 }
 
-.features .section-item:nth-child(1)::before {
+/* .features .section-item:nth-child(1)::before {
   background-image: url(../icons/2-features/1-antenna.svg);
-}
+} */
 
-.features .section-item:nth-child(2)::before {
+/* .features .section-item:nth-child(2)::before {
   background-image: url(../icons/2-features/2-clock.svg);
 }
 
@@ -343,7 +346,7 @@ body {
 
 .features .section-item:nth-child(4)::before {
   background-image: url(../icons/2-features/4-astronaut.svg);
-}
+} */
 
 
 /* Чем мы занимаемся */
