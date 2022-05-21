@@ -142,7 +142,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  display: block;
   padding: 32px 0;
   text-decoration: none;
 }
@@ -164,7 +163,10 @@ body {
 .logo-header:hover,
 .logo-header:focus,
 .logo-footer:hover,
-.logo-footer:focus,
+.logo-footer:focus {
+  color: var(--accent-color);
+}
+
 .header-link:hover,
 .header-link:focus,
 .header-contact:hover,
@@ -181,31 +183,11 @@ body {
   margin-right: 50px;
 }
 
-/* не работает ????????????????????????????????????????????? */
-/* .header-mail-phone .header-item::before {
-  content: " ";
-  display: block;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-right: 10px;
-}
-
-.icon-envelope::before {
-  background-image: url(../icons/1-header/envelope.svg);
-  height: 16px;
-  width: 10px;
-}
-
-.icon-smartphone::before {
-  background-image: url(../icons/1-header/smartphone.svg);
-  height: 10px;
-  width: 16px;
-} */
-
 .header-icon {
   margin-right: 10px;
+  fill: currentColor;
 }
+
 
 .header {
   border-bottom: 1px solid var(--header-line-bottom)
