@@ -138,6 +138,11 @@ body {
   align-items: center;
 }
 
+.header-contact-block {
+  display: flex;
+  align-items: center;
+}
+
 .header-link {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -222,9 +227,10 @@ body {
   height: 600px;
   padding: 200px;
 
-  min-width: 1600px;
+  width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  background-size: cover;
   background-image:
     linear-gradient(to right,
       rgba(47, 48, 58, 0.4),
@@ -278,10 +284,6 @@ background-color: var(--hero-button-hover);
 
 
 /* Особенности features  */
-.features {
-  padding-top: 94px;
-  padding-bottom: 0px;
-}
 
 .section-uppertitle {
   color: var(--primary-text-color);
@@ -331,6 +333,10 @@ background-color: var(--hero-button-hover);
 }
 
 /* Чем мы занимаемся */
+
+.section.doing {
+  padding-top: 0;
+}
 
 .doing .section-list {
   display: flex;
@@ -399,29 +405,38 @@ background-color: var(--hero-button-hover);
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-button-list {
+/* Social icon */
+
+.socials-list {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.team-button {
+.socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   padding: 0px;
   border: none;
+
   width: 44px;
   height: 44px;
+
   color: var(--primary-color);
   border-radius: 50%;
   background-color: var(--primary-color);
+
   fill: var(--icon-main-color);
 }
 
-.team-button-item:not(:last-child) {
+.socials-item:not(:last-child) {
   margin-right: 10px;
 }
 
-.team-button:hover,
-.team-button:focus {
+.socials-link:hover,
+.socialslink:focus {
   background-color: var(--accent-color);
   fill: var(--primary-color);
   cursor: pointer;
@@ -461,14 +476,12 @@ background-color: var(--hero-button-hover);
   fill: var(--icon-main-color);
 }
 
-
 .clients-item:hover,
 .clients-item:focus,
 .clients-icon:hover,
 .clients-icon:focus {
   border-color: var(--accent-color);
   fill: var(--accent-color);
-  cursor: pointer;
 }
 
 
@@ -518,14 +531,8 @@ background-color: var(--hero-button-hover);
 
 /* Footer Join socials */
 
-.footer-item-join {
-  margin-top: 12px;
-}
 
 .footer-item-join {
-  width: 144px;
-  height: 16px;
-
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -537,13 +544,13 @@ background-color: var(--hero-button-hover);
   margin-bottom: 20px;
 }
 
-.footer .team-button {
+.footer .socials-link {
   background-color: var(--icon-footer-color);
   fill: var(--primary-color);
 }
 
-.footer .team-button:hover,
-.footer .team-button:focus {
+.footer .socials-link:hover,
+.footer .socials-link:focus {
   background-color: var(--accent-color);
   fill: var(--primary-color);
   cursor: pointer;
