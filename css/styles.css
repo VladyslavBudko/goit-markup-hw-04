@@ -56,6 +56,10 @@ img {
   display: block;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   background-color: var(--primary-color);
   color: var(--primary-text-color);
@@ -141,6 +145,7 @@ body {
 .header-contact-block {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .header-link {
@@ -179,7 +184,9 @@ body {
 .header-link:hover,
 .header-link:focus,
 .header-contact:hover,
-.header-contact:focus {
+.header-contact:focus,
+.header-icon:focus,
+.header-icon:hover {
   color: var(--accent-color);
 }
 
