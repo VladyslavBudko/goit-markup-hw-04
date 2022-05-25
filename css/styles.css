@@ -465,24 +465,37 @@ background-color: var(--hero-button-hover);
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
 
+}
+
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 170px;
   height: 92px;
+
+
   border: 1px solid var(--icon-main-color);
   border-radius: 4px;
+
 }
 
 .clients-icon {
   fill: var(--icon-main-color);
 }
 
-.clients-item:hover,
-.clients-item:focus,
-.clients-icon:hover,
-.clients-icon:focus {
+
+.clients-link:hover,
+.clients-link:focus {
   border-color: var(--accent-color);
-  fill: var(--accent-color);
+
 }
 
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  fill: var(--accent-color);
+}
 
 /* footer */
 
