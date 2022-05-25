@@ -23,9 +23,6 @@
   --icon-footer-color: rgba(255, 255, 255, 0.1);
 }
 
-/* Іноді є питання, позначені:
- Питання до ментора!!!!!!!!!!!!!*/
-
 /* сброс стандартных параметров */
 h1,
 h2,
@@ -174,18 +171,6 @@ body {
 
   text-decoration: none;
 }
-
-/*  header/footer logo,nav */
-
-/* .logo-header:hover,
-.logo-header:focus,
-.logo-footer:hover,
-.logo-footer:focus  */
-
-/* .header .logo:hover,
-.logo:focus {
-  color: var(--accent-color);
-} */
 
 .header-link:hover,
 .header-link:focus,
