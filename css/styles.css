@@ -119,7 +119,9 @@ body {
 }
 
 .logo:hover .logo-header,
-.logo:focus .logo-header {
+.logo:focus .logo-header,
+.logo:hover .logo-footer,
+.logo:focus .logo-footer {
   color: var(--accent-color);
 }
 
