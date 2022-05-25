@@ -149,6 +149,7 @@ body {
 }
 
 .header-link {
+  display: block;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -184,9 +185,7 @@ body {
 .header-link:hover,
 .header-link:focus,
 .header-contact:hover,
-.header-contact:focus,
-.header-icon:focus,
-.header-icon:hover {
+.header-contact:focus {
   color: var(--accent-color);
 }
 
@@ -215,13 +214,6 @@ body {
   color: var(--accent-color);
 }
 
-.address-footer:hover,
-.address-footer:focus,
-.footer-contact:hover,
-.footer-contact:focus {
-  color: var(--accent-color);
-}
-
 /* hero */
 .hero-container {
   width: 1200px;
@@ -232,7 +224,7 @@ body {
 .hero {
   background-color: var(--hero-background);
   height: 600px;
-  padding: 200px;
+  padding: 200px 0;
 
   width: 1600px;
   margin-left: auto;
@@ -443,7 +435,7 @@ background-color: var(--hero-button-hover);
 }
 
 .socials-link:hover,
-.socialslink:focus {
+.socials-link:focus {
   background-color: var(--accent-color);
   fill: var(--primary-color);
   cursor: pointer;
@@ -494,6 +486,13 @@ background-color: var(--hero-button-hover);
 
 /* footer */
 
+.address-footer:hover,
+.address-footer:focus,
+.footer-contact:hover,
+.footer-contact:focus {
+  color: var(--accent-color);
+}
+
 .footer {
   background-color: var(--hero-background);
   padding: 60px 0;
@@ -501,6 +500,7 @@ background-color: var(--hero-button-hover);
 
 .footer-list {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-item:not(:last-child) {
